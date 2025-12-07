@@ -1,0 +1,15 @@
+Setelah anda menyelesaikan kode, tolong jawab pertanyaan dibawah ini ya =
+
+
+1. Apa tujuan utama adanya interface dalam pemrograman berorientasi objek, dan bagaimana interface membantu menciptakan kontrak perilaku?
+2. Mengapa interface dapat memiliki banyak implementasi, dan apa makna konseptual dari kemampuan tersebut dalam desain sistem?
+3. Apa perbedaan mendasar antara extends dan implements dalam konteks interface, jika dilihat secara konsep tanpa melihat contoh kode?
+4. Apa alasan diperkenalkannya default method dalam interface, dan bagaimana fitur ini memengaruhi keberlangsungan (compatibility) suatu sistem yang sudah berjalan?
+5. Bagaimana konsep multiple interface memperluas fleksibilitas desain tanpa menimbulkan masalah kompleksitas yang biasa muncul pada multiple inheritance?
+
+Jawaban:
+1. Tujuan utama interface adalah untuk mendefinisikan kontrak perilaku yang harus diimplementasikan oleh class. Interface membantu menciptakan kontrak dengan cara mendeklarasikan method-method yang wajib ada, sehingga memastikan konsistensi implementasi di berbagai class yang berbeda.
+2. Interface dapat memiliki banyak implementasi karena ia hanya mendefinisikan "apa yang harus dilakukan" bukan "bagaimana melakukannya". Ini memungkinkan berbagai class dengan implementasi berbeda untuk memenuhi kontrak yang sama, memberikan fleksibilitas dalam desain sistem.
+3. Perbedaan mendasar: 'extends' digunakan untuk pewarisan antar class (class ke class atau interface ke interface), sedangkan 'implements' digunakan untuk mengimplementasikan interface ke dalam class. 'Extends' mewarisi implementasi, 'implements' mewarisi kontrak tanpa implementasi.
+4. Default method diperkenalkan untuk memungkinkan penambahan method baru pada interface tanpa memaksa class yang sudah ada untuk mengimplementasikannya. Ini menjaga backward compatibility sistem yang sudah berjalan karena class lama tetap dapat berjalan tanpa modifikasi.
+5. Multiple interface memperluas fleksibilitas dengan memungkinkan class mengimplementasikan banyak kontrak tanpa masalah "diamond problem" yang muncul pada multiple inheritance. Karena interface tidak memiliki state, tidak ada konflik data, dan default method dapat di-override jika terjadi konflik.

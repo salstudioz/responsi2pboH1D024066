@@ -5,3 +5,10 @@ Jawablah pertanyaan berikut:
 3. Apa perbedaan override dan overload?
 4. Apa keuntungan menggunakan polimorfisme dalam sistem inventaris seperti contoh di atas?
 5. Bagaimana cara kerja dynamic dispatch pada Java saat memanggil method override?
+
+Jawaban 
+1. Polimorfisme adalah kemampuan suatu objek untuk memiliki banyak bentuk, yaitu objek dari subclass dapat diperlakukan sebagai objek dari superclass. Method override bekerja dengan mendefinisikan ulang method dari superclass di subclass dengan signature yang sama, sehingga ketika method dipanggil pada objek subclass, versi subclass yang akan dieksekusi.
+2. Array bertipe DefaultMesin dapat menyimpan objek MesinMotor dan MesinTraktor karena konsep polimorfisme dalam inheritance. MesinMotor dan MesinTraktor adalah subclass dari DefaultMesin, sehingga objek mereka dapat di-assign ke variabel bertipe DefaultMesin.
+3. Override: method dengan nama dan parameter sama di subclass untuk mengubah implementasi dari superclass. Overload: beberapa method dengan nama sama dalam satu class tetapi parameter berbeda (jumlah atau tipe).
+4. Keuntungan polimorfisme dalam sistem inventaris: (1) fleksibilitas dalam menambah tipe mesin baru tanpa mengubah kode yang ada, (2) keseragaman dalam penanganan objek berbeda, (3) kemudahan pemeliharaan dengan kode yang lebih terstruktur.
+5. Dynamic dispatch bekerja dengan mekanisme virtual method invocation. Saat runtime, JVM akan menentukan method mana yang akan dieksekusi berdasarkan tipe aktual dari objek, bukan tipe referensi. Ini memungkinkan pemanggilan method override sesuai dengan objek sebenarnya.
